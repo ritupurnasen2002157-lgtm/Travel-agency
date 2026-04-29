@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages - Travel India</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container container">
+      <a href="index.html" class="logo"><i class="fas fa-plane-departure"></i> Travel India</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html#packages" class="active">Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="https://www.irctctourism.com/famous-places-in-india/img/1stsection.jpg">
+    <div class="hero-content">
+      <h1>Best Travel Packages</h1>
+      <p>Handpicked tours at unbeatable prices with best hotels & services</p>
+    </div>
+  </section>
+
+  <section id="packages" class="container">
+    <h2>Our Special Packages</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.2rem;">
+      All packages include accommodation, meals, transfers, sightseeing and 24/7 support
+    </p>
+
+    <!-- Sort buttons -->
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <button onclick="sortPackages('price-asc')" style="margin: 0 10px;">Price: Low to High</button>
+      <button onclick="sortPackages('price-desc')" style="margin: 0 10px;">Price: High to Low</button>
+      <button onclick="sortPackages('duration')" style="margin: 0 10px;">Duration</button>
+    </div>
+
+    <div class="grid" id="packages-grid">
+      <!-- Golden Triangle -->
+      <div class="card" data-price="25999" data-duration="5">
+        <img src="https://www.roverholidays.com/assets/uploads/subcategory/image-RF68O5A2G57NFTQ3.jpg">
+        <div class="card-content">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h3>Golden Triangle Deluxe</h3>
+            <span class="price"><i class="fas fa-rupee-sign"></i> 25,999 <small>/person</small></span>
+          </div>
+          <ul style="margin-bottom: 1rem; padding-left: 1.2rem;">
+            <li>5 Days / 4 Nights</li>
+            <li>Delhi • Agra • Jaipur</li>
+            <li>4★ Hotels + Breakfast</li>
+            <li>Private AC Vehicle</li>
+            <li>Taj Mahal Sunrise View</li>
+          </ul>
+          <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Kerala Honeymoon -->
+      <div class="card" data-price="42500" data-duration="7">
+        <img src="https://www.mountainschaintravel.com/Dashboard/Assets/Images/Upcoming_packages/Munnar_alleppey21.jpg">
+        <div class="card-content">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h3>Kerala Honeymoon Special</h3>
+            <span class="price"><i class="fas fa-rupee-sign"></i> 42,500 <small>/couple</small></span>
+          </div>
+          <ul style="margin-bottom: 1rem; padding-left: 1.2rem;">
+            <li>7 Days / 6 Nights</li>
+            <li>Houseboat + Munnar + Kochi</li>
+            <li>5★ Resorts + All Meals</li>
+            <li>Candlelight Dinner</li>
+            <li>Ayurvedic Massage</li>
+          </ul>
+          <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Goa -->
+      <div class="card" data-price="18999" data-duration="4">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/52/a5/2e/getlstd-property-photo.jpg">
+        <div class="card-content">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h3>Goa Beach Bliss</h3>
+            <span class="price"><i class="fas fa-rupee-sign"></i> 18,999 <small>/person</small></span>
+          </div>
+          <ul style="margin-bottom: 1rem; padding-left: 1.2rem;">
+            <li>4 Days / 3 Nights</li>
+            <li>Beach Resort Stay</li>
+            <li>All Meals + Party Night</li>
+            <li>Water Sports</li>
+            <li>Airport Transfers</li>
+          </ul>
+          <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Rajasthan -->
+      <div class="card" data-price="38999" data-duration="8">
+        <img src="https://www.admin.rajasthantourpackages.in/uploads/hawa-mahal.jpeg">
+        <div class="card-content">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h3>Rajasthan Royal Heritage</h3>
+            <span class="price"><i class="fas fa-rupee-sign"></i> 38,999 <small>/person</small></span>
+          </div>
+          <ul style="margin-bottom: 1rem; padding-left: 1.2rem;">
+            <li>8 Days / 7 Nights</li>
+            <li>Palace Hotels</li>
+            <li>Jaipur • Udaipur • Jodhpur</li>
+            <li>Heritage Walks</li>
+            <li>Camel Safari</li>
+          </ul>
+          <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Himachal -->
+      <div class="card" data-price="29999" data-duration="6">
+        <img src="https://wpblogassets.paytm.com/travelblog/uploads/2023/11/MAnali-1.jpg">
+        <div class="card-content">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h3>Himachal Winter Wonderland</h3>
+            <span class="price"><i class="fas fa-rupee-sign"></i> 29,999 <small>/person</small></span>
+          </div>
+          <ul style="margin-bottom: 1rem; padding-left: 1.2rem;">
+            <li>6 Days / 5 Nights</li>
+            <li>Manali • Shimla</li>
+            <li>Snow Activities</li>
+            <li>Paragliding Option</li>
+          </ul>
+          <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Andaman -->
+      <div class="card" data-price="45999" data-duration="5">
+        <img src="https://nitsaholidays.in/uploads/blog/204432HOW+TO+REACH+Andaman+and+Nicobar+Islands.jpg">
+        <div class="card-content">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h3>Andaman Island Paradise</h3>
+            <span class="price"><i class="fas fa-rupee-sign"></i> 45,999 <small>/person</small></span>
+          </div>
+          <ul style="margin-bottom: 1rem; padding-left: 1.2rem;">
+            <li>5 Days / 4 Nights</li>
+            <li>Scuba Diving</li>
+            <li>Resort Stay</li>
+            <li>Coral Reef Snorkeling</li>
+          </ul>
+          <a href="contact.html" class="btn" style="display: block; text-align: center;">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function sortPackages(criteria) {
+      const grid = document.getElementById('packages-grid');
+      const packages = Array.from(grid.children);
+      
+      packages.sort((a, b) => {
+        if (criteria === 'price-asc') {
+          return parseInt(a.dataset.price) - parseInt(b.dataset.price);
+        } else if (criteria === 'price-desc') {
+          return parseInt(b.dataset.price) - parseInt(a.dataset.price);
+        } else if (criteria === 'duration') {
+          return parseInt(a.dataset.duration) - parseInt(b.dataset.duration);
+        }
+      });
+      
+      grid.innerHTML = '';
+      packages.forEach(pkg => grid.appendChild(pkg));
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h3><i class="fas fa-plane-departure"></i> Travel India</h3>
+          <p>Your trusted partner for unforgettable Indian adventures.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="packages.html">Packages</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-icons">
+          <h4>Follow Us</h4>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> info@travelindia.com</p>
+        </div>
+      </div>
+      <div style="border-top: 1px solid #475569; padding-top: 2rem; text-align: center;">
+        <p>&copy; 2024 Travel India. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

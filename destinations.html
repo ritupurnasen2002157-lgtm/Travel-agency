@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations - Travel India</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container container">
+      <a href="index.html" class="logo"><i class="fas fa-plane-departure"></i> Travel India</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html#destinations" class="active">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="https://blackberryholidays.com/assets/images/IMG/Benefits-of-Booking-with-a-Travel-Agent_IMAD-Travel.webp">
+    <div class="hero-content">
+      <h1>Amazing Destinations</h1>
+      <p>Discover the diverse beauty of India from Himalayas to beaches</p>
+    </div>
+  </section>
+
+  <section id="destinations" class="container">
+    <h2>Explore India</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.2rem;">India offers unparalleled diversity - ancient heritage, natural wonders, spiritual sites, adventure destinations and beach paradises.</p>
+    
+    <!-- Filters -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All Destinations</button>
+      <button class="filter-btn" data-filter="north">North India</button>
+      <button class="filter-btn" data-filter="south">South India</button>
+      <button class="filter-btn" data-filter="beach">Beaches</button>
+      <button class="filter-btn" data-filter="hill">Hill Stations</button>
+    </div>
+
+    <!-- Destinations Grid -->
+    <div class="grid">
+      <div class="card destination-card" data-category="north">
+        <img src="https://s3.india.com/wp-content/uploads/2024/02/Feature-Image-of-Agra.jpg">
+        <div class="card-content">
+          <h3>Taj Mahal, Agra</h3>
+          <p>Iconic white marble mausoleum, UNESCO World Heritage Site, Symbol of eternal love</p>
+          <div class="price">Starting ₹12,999</div>
+        </div>
+      </div>
+
+      <div class="card destination-card" data-category="north">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFeE2n4zjeO131CWZRC6tAGVhfQI5MSDvu6Q&s">
+        <div class="card-content">
+          <h3>Jaipur - Pink City</h3>
+          <p>Royal palaces, vibrant bazaars, Amber Fort elephant rides</p>
+          <div class="price">Starting ₹15,499</div>
+        </div>
+      </div>
+
+      <div class="card destination-card" data-category="north">
+        <img src="https://miro.medium.com/1*sAI71n2RlZ70uC5r4KWjSw.jpeg">
+        <div class="card-content">
+          <h3>Varanasi - Spiritual Capital</h3>
+          <p>Ganges River, ancient temples, evening aarti ceremony</p>
+          <div class="price">Starting ₹18,999</div>
+        </div>
+      </div>
+
+      <div class="card destination-card" data-category="hill">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoWVDr6zkG5C4q9Ik4U1OueRh_J6dfq6bjmA&s">
+        <div class="card-content">
+          <h3>Manali - Himalayan Beauty</h3>
+          <p>Snow-capped mountains, adventure sports, apple orchards</p>
+          <div class="price">Starting ₹22,500</div>
+        </div>
+      </div>
+
+      <div class="card destination-card" data-category="south">
+        <img src="https://s3.india.com/wp-content/uploads/2025/09/Kerala-Backwaters-Like-Youve-Never-Seen_-The-Untold-Eco-Friendly-Way-To-Explore.jpg?impolicy=Medium_Widthonly&w=350&h=263">
+        <div class="card-content">
+          <h3>Kerala Backwaters</h3>
+          <p>Houseboat cruises, coconut groves, Ayurvedic retreats</p>
+          <div class="price">Starting ₹28,999</div>
+        </div>
+      </div>
+
+      <div class="card destination-card" data-category="beach">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_URm_j8JXrpOurHBqFQGpPJP8vEA2gAMjUA01jklYprgbn_lAKe0rjaMLE265gN-8rkHwkXi3sUc8NYbklWhhBaG1RS24X3HxAUeoCEpRmaD_yKCcO9jGn8cnGI6D__8HFkcupVVYFiY/s1600/Goa-Beach-Party.jpg">
+        <div class="card-content">
+          <h3>Goa - Party Capital</h3>
+          <p>Golden beaches, Portuguese heritage, nightlife & water sports</p>
+          <div class="price">Starting ₹16,499</div>
+        </div>
+      </div>
+
+      <div class="card destination-card" data-category="south">
+        <img src="https://photos.beontheroad.com/img/s/v-3/p3370519726-4.jpg">
+        <div class="card-content">
+          <h3>Mysore Palace</h3>
+          <p>Royal architecture, Dasara festival, silk sarees</p>
+          <div class="price">Starting ₹14,999</div>
+        </div>
+      </div>
+
+      <div class="card destination-card" data-category="hill">
+        <img src="https://internationaljournalofresearch.com/wp-content/uploads/2020/05/ooty-queen-of-hills.png">
+        <div class="card-content">
+          <h3>Ooty - Queen of Hills</h3>
+          <p>Tea estates, toy train, botanical gardens</p>
+          <div class="price">Starting ₹19,999</div>
+        </div>
+      </div>
+
+      <div class="card destination-card" data-category="beach">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPnyYf8VrkkukeMk-MQJRvfTmWCb0Gq9Ii-w&s">
+        <div class="card-content">
+          <h3>Andaman Islands</h3>
+          <p>Crystal clear waters, coral reefs, scuba diving paradise</p>
+          <div class="price">Starting ₹35,999</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="background: linear-gradient(135deg, #1E3A8A, #3B82F6); color: white; text-align: center; padding: 4rem 0;">
+    <div class="container">
+      <h2>Ready to Explore?</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 2rem;">Choose your perfect destination and let us plan your dream vacation</p>
+      <div>
+        <a href="packages.html" class="btn" style="background: white; color: #1E3A8A; margin-right: 1rem;">View Packages</a>
+        <a href="contact.html" class="btn" style="background: transparent; border: 2px solid white; color: white;">Enquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h3><i class="fas fa-plane-departure"></i> Travel India</h3>
+          <p>Your trusted partner for unforgettable Indian adventures.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="packages.html">Packages</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-icons">
+          <h4>Follow Us</h4>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> info@travelindia.com</p>
+        </div>
+      </div>
+      <div style="border-top: 1px solid #475569; padding-top: 2rem; text-align: center;">
+        <p>&copy; 2024 Travel India. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #EF4444;"></i> for wanderlust.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
